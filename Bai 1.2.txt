@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 
 struct HonSo
 {
@@ -9,10 +8,7 @@ struct HonSo
 };
 typedef struct HonSo HONSO;
 
-void NhapHonSo(HONSO &);
-void XuatHonSo(HONSO);
-
-void NhapHonSo(HONSO &hs)
+void NhapHonSo(HONSO hs)
 {
 	printf("\nNhap phan nguyen: ");
 	scanf("%d", &hs.Phannguyen);
@@ -35,6 +31,6 @@ int main()
 	NhapHonSo(hs);
 	XuatHonSo(hs);
 
-	getch();
+getc;
 	return 0;
 }
