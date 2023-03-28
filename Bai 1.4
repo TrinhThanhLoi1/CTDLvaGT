@@ -1,0 +1,37 @@
+#include<stdio.h>
+struct Diem
+{
+	float x;
+	float y;
+	float z;
+};
+
+typedef struct Diem DIEM;
+
+void NhapDiem(DIEM di)
+{
+    float temp;
+	printf("\nNhap x: ");
+	scanf("%f", &temp);
+    temp = di.x;
+	printf("\nNhap y: ");
+	scanf("%f", &temp);
+temp = di.y;
+printf("\nNhap z: ");
+	scanf("%f", &temp);
+temp = di.z;
+}
+
+void XuatDiem(DIEM d)
+{
+	printf("(%d, %d,%d)", d.x,d.y,d.z);
+}
+
+int main()
+{
+	DIEM d;
+	NhapDiem(d);
+	XuatDiem(d);
+
+	return 0;
+}
