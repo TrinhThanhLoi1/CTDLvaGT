@@ -20,7 +20,7 @@ void NhapDonThuc(DONTHUC dtt)
 
 void XuatDonThuc(DONTHUC dt)
 {
-	printf("%8.3fx^%d", dt.a, dt.n);
+	printf("%d^%d", dt.a, dt.n);
 }
 
 int main()
