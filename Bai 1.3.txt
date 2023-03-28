@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
-
 struct Diem
 {
 	float x;
@@ -9,24 +7,20 @@ struct Diem
 
 typedef struct Diem DIEM;
 
-void NhapDiem(DIEM &);
-void XuatDiem(DIEM);
-
-void NhapDiem(DIEM &d)
+void NhapDiem(DIEM di)
 {
-	float temp;
+    float temp;
 	printf("\nNhap x: ");
 	scanf("%f", &temp);
-	d.x = temp;
-
+    temp = di.x;
 	printf("\nNhap y: ");
 	scanf("%f", &temp);
-	d.y = temp;
+temp = di.y;
 }
 
 void XuatDiem(DIEM d)
 {
-	printf("(%8.3f, %8.3f)", d.x, d.y);
+	printf("(%d, %d)", d.x,d.y);
 }
 
 int main()
@@ -35,6 +29,5 @@ int main()
 	NhapDiem(d);
 	XuatDiem(d);
 
-	getch();
 	return 0;
 }
